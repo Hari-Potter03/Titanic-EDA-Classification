@@ -1,7 +1,15 @@
+# Core Data Analysis
 pandas
-matplotlib.pyplot
 numpy
-scikit-learn
-statsmodels
+
+# Visualization
+matplotlib
 seaborn
+
+# Modeling & Machine Learning
+scikit-learn
+xgboost
+
+# Statistical Analysis
+statsmodels
 scipy
