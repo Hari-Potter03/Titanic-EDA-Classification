@@ -21,16 +21,26 @@ function App() {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async e => {
+    const handleSubmit = async e => {
     e.preventDefault();
+    // Ensure numbers are actually numbers
+    const payload = {
+        ...formData,
+        Age: Number(formData.Age),
+        Fare: Number(formData.Fare),
+        SibSp: Number(formData.SibSp),
+        Parch: Number(formData.Parch),
+        Pclass: Number(formData.Pclass),
+    };
     const response = await fetch("http://127.0.0.1:5000/predict", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData)
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
     });
     const data = await response.json();
     setPrediction(data);
-  };
+    };
+
 
   return (
     <div style={{ padding: "2rem" }}>
