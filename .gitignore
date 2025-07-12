@@ -1,1 +1,10 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+node_modules/
+frontend/node_modules/
+frontend/.next/
+frontend/build/
+frontend/dist/
+.vscode/
 .DS_Store
