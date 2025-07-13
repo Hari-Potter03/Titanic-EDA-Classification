@@ -13,3 +13,10 @@ xgboost
 # Statistical Analysis
 statsmodels
 scipy
+
+# Saving and Loading Models
+joblib
+flask
+flask-cors
+
+# En
