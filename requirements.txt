@@ -18,5 +18,3 @@ scipy
 joblib
 flask
 flask-cors
-
-# En
